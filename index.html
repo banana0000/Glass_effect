@@ -1,291 +1,132 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Gloria+Hallelujah&family=Grape+Nuts&family=Montserrat:ital,wght@0,100;0,300;1,200&family=Pacifico&family=Poppins:wght@100;300;500;700&family=Russo+One&family=Smooch&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Glassmorphism</title>
+    <script
+      src="https://kit.fontawesome.com/db7629ab07.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo"><span>Dev</span>Story</div>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">Story</a>
+          <a href="#">Shop</a>
+          <a href="#">Featured</a>
+        </div>
+        <div>
+          <button class="button-blue">Sign In</button>
+          <button class="button-transparent">Sign Up</button>
+        </div>
+      </header>
 
-:root {
-  --base-font: Verdana, "sans-serif";
-  --base-font-color: #ffff;
-  --base-font-size: 18px;
-  --base-line-hight: 1.5em;
-  --button-blue-bg-color: ;
-  --button-blue-bg-color: orange;
-}
+      <div class="upper-boxes">
+        <div class="left">
+          <img
+            class="img1"
+            src="https://ouch-cdn2.icons8.com/oBK4Hw93BMi1KCjHMw-he_mwAEl6-zrjx5V1pARGJyQ/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjEx/LzI1Zjc5ZTZmLTY1/YTYtNDEyMy1iNzNi/LWRmODZjOWIzMjQ5/MC5zdmc.png"
+            alt="img1"
+          />
+          <div>
+            <h2>Award-Winning <br />Game maker</h2>
+            <p>
+              Lorem ipsum dolor sit <br />
+              praesentium sit nam...
+            </p>
+            <button class="button-blue">
+              See more <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <br />
+        </div>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        <div class="right">
+          <div class="smallbox">
+            <img
+              class="img2"
+              src="https://tse2.mm.bing.net/th?id=OIP.1f4L8uI7SgYFrlQ1taL1YgHaHa&pid=Api&P="
+              alt="img2"
+            />
+            <div>
+              <h3>Gaming Developer</h3>
+              <p>Python, C++</p>
+            </div>
+          </div>
+          <div class="smallbox">
+            <img
+              class="img2"
+              src="https://tse2.mm.bing.net/th?id=OIP.1f4L8uI7SgYFrlQ1taL1YgHaHa&pid=Api&P="
+              alt="img2"
+            />
+            <div>
+              <h3>Front End Developer</h3>
+              <p>HTML, CSS, JS</p>
+            </div>
+          </div>
+          <div class="smallbox">
+            <img
+              class="img2"
+              src="https://tse2.mm.bing.net/th?id=OIP.mWaZ5rZ6uzhHD8kk4HM2RwHaHa&pid=Api&P=0"
+              alt="img2"
+            />
+            <div>
+              <h3>Back End Developer</h3>
+              <p>Python, Dijango, SQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-body {
-  height: 100vh;
-  width: 100%;
-  background: #0d0d0d;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  color: var(--base-font-color);
-  font-family: var(--base-font);
-  font-size: var(--base-font-size);
-  z-index: ;
-}
-
-.circle1 {
-  height: 250px;
-  width: 250px;
-  background: linear-gradient(45deg, black, orange);
-  border-radius: 50%;
-  z-index: -3;
-  position: absolute;
-  left: 100px;
-  bottom: 100px;
-  transform: translatex(0px);
-  animatio: float 10s infinite;
-}
-
-.circle2 {
-  height: 200px;
-  width: 200px;
-  background: linear-gradient(45deg, black, orange);
-  border-radius: 50%;
-  z-index: -3;
-  position: absolute;
-  right: 150px;
-  top: 100px;
-  transform: translatex(0px);
-  animatio: float 10s infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translatex(0px);
-  }
-  50% {
-    transform: translatex(650px);
-  }
-}
-
-.logo {
-  font-family: "Smooch", cursive;
-  font-size: 1.5rem;
-}
-
-span {
-  color: orange;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-a:hover,
-a:focus {
-  color: orange;
-}
-h3 {
-  font-size: 18px;
-}
-
-h3,
-p {
-  margin: 0.5rem 0;
-}
-.price {
-  margin-left: -5rem;
-  margin-top: 1rem;
-}
-
-a:hover,
-a:focus {
-  color: var(--button-blue-bg-color);
-}
-
-button {
-  margin: 0.1rem 0;
-  padding: 10px 15px;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: rgb(9, 9, 22);
-}
-
-.button-blue {
-  background: var(--button-blue-bg-color);
-  border-radius: 10px;
-}
-
-.button-transparent {
-  background: transparent;
-  border: 1px solid white;
-}
-.container {
-  height: 90vh;
-  width: 60rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 13px;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
-  z-index: 100;
-}
-
-.container header {
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: space-between;
-  gap: 10rem;
-  z-index: 3;
-}
-
-.upper-boxes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  gap: 5rem;
-  z-index: 5;
-}
-
-.upper-boxes .left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  height: 14rem;
-  width: 28rem;
-  background: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 13px;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
-  z-index: 5;
-  position: relative;
-}
-
-.upper-boxes .right {
-  display: flex;
-  flex-direction: column;
-  height: 13rem;
-  width: 18rem;
-  gap: 1rem;
-  z-index: 5;
-}
-
-.upper-boxes .right .smallbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 0.2rem;
-  border-radius: 13px;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 5;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.developer-boxes {
-  margin-top: 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-
-.developer-boxes .box {
-  height: 10rem;
-  width: 10rem;
-  border: 1px solid rgba(255, 255, 255, 0.02);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 13px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.developer-boxes .box {
-  text-align: center;
-}
-
-.img1 {
-  height: 11rem;
-  width: 11rem;
-}
-
-.img2 {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-}
-
-.img3 {
-  margin-top: -2rem;
-  height: 4rem;
-  width: 4rem;
-}
-
-.button3 {
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-}
-
-.button4 {
-  padding: 1rem;
-  background: transparent;
-  border: 1px solid white;
-  transform: translate(-45px, -25px);
-}
-
-@media screen and (max-width: 600px) {
-  body,
-  header,
-  .container,
-  .upper-boxes,
-  .upper-boxes .left,
-  .upper-boxes .right,
-  .upper-boxes .right .smallbox,
-  .developer-boxes,
-  .developer-boxes .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 95%;
-    height: auto;
-    gap: 3rem;
-  }
-
-  .container header,
-  .container,
-  .upper-boxes .right .smallbox,
-  .developer-boxes .box {
-    gap: 1rem;
-    margin-top: 2rem;
-    padding-top: 1rem;
-  }
-
-  header a {
-    display: block;
-    text-align: center;
-    padding: 0;
-  }
-
-  .circle1,
-  .circle2 {
-    height: 50px;
-    width: 50px;
-  }
-
-  .button4 {
-    transform: translateX(0);
-  }
-}
+      <div class="developer-boxes">
+        <div class="box">
+          <img
+            class="img3"
+            src="https://cdn.iconscout.com/icon/free/png-128/house-1110-449884.png"
+            alt="img3"
+          />
+          <h3>3D Design Home</h3>
+          <p>Flat room</p>
+          <p class="price">$150,00</p>
+        </div>
+        <div class="box">
+          <img
+            class="img3"
+            src="https://cdn.iconscout.com/icon/premium/png-128-thumb/house-1819653-1544333.png"
+            alt="img3"
+          />
+          <h3>3D Design Home</h3>
+          <p>Kitchen Room</p>
+          <p class="price">$180,00</p>
+        </div>
+        <div class="box">
+          <img
+            class="img3"
+            src="https://cdn.iconscout.com/icon/free/png-128/house-1114-449889.png"
+            alt="img3"
+          />
+          <h3>3D Design Home</h3>
+          <p>Living Room</p>
+          <p class="price">$190,00</p>
+        </div>
+        <button class="button-transparent">Courses</button>
+        <div>
+          <button class="button3">
+            <i class="fas fa-arrow-right"></i></button
+          ><br /><br />
+          <button class="button4">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </body>
+</html>
