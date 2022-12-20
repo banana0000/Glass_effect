@@ -28,8 +28,36 @@ body {
   color: var(--base-font-color);
   font-family: var(--base-font);
   font-size: var(--base-font-size);
-  z-index: ;
 }
+
+.topnav {
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav a.active {
+  background-color:white;
+  color: white;
+}
+
+.nav .icon {
+  display: none;
+}
+
 
 .circle1 {
   height: 250px;
@@ -41,7 +69,6 @@ body {
   left: 100px;
   bottom: 100px;
   transform: translatex(0px);
-  animatio: float 10s infinite;
 }
 
 .circle2 {
@@ -54,16 +81,6 @@ body {
   right: 150px;
   top: 100px;
   transform: translatex(0px);
-  animatio: float 10s infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translatex(0px);
-  }
-  50% {
-    transform: translatex(650px);
-  }
 }
 
 .logo {
@@ -75,20 +92,6 @@ span {
   color: orange;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-a:hover,
-a:focus {
-  color: orange;
-}
-h3 {
-  font-size: 18px;
-}
-
 h3,
 p {
   margin: 0.5rem 0;
@@ -96,11 +99,6 @@ p {
 .price {
   margin-left: -5rem;
   margin-top: 1rem;
-}
-
-a:hover,
-a:focus {
-  color: var(--button-blue-bg-color);
 }
 
 button {
@@ -140,7 +138,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: space-between;
-  gap: 10rem;
+  gap: 50px;
   z-index: 3;
 }
 
@@ -149,7 +147,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  gap: 5rem;
+  gap: 25px;
   z-index: 5;
 }
 
@@ -175,7 +173,7 @@ button:hover {
   flex-direction: column;
   height: 13rem;
   width: 18rem;
-  gap: 1rem;
+  gap: 18px;
   z-index: 5;
 }
 
@@ -183,7 +181,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 36pxrem;
   padding: 0.2rem;
   border-radius: 13px;
   backdrop-filter: blur(10px);
@@ -246,8 +244,8 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   body,
-  header,
   .container,
+  header,
   .upper-boxes,
   .upper-boxes .left,
   .upper-boxes .right,
@@ -261,31 +259,37 @@ button:hover {
     margin: 0 auto;
     width: 95%;
     height: auto;
-    gap: 3rem;
-  }
-
-  .container header,
-  .container,
-  .upper-boxes .right .smallbox,
-  .developer-boxes .box {
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 50px;
+    margin-top: 1rem;
     padding-top: 1rem;
   }
 
-  header a {
-    display: block;
-    text-align: center;
-    padding: 0;
-  }
-
-  .circle1,
+ .circle1,
   .circle2 {
-    height: 50px;
-    width: 50px;
+    display: none;
   }
 
   .button4 {
     transform: translateX(0);
+  }
+
+
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: left;
+    display: block;
+  }
+
+
+  .nav.responsive .icon {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
   }
 }
