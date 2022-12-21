@@ -18,7 +18,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background: #0d0d0d;
+  background: linear-gradient(45deg, lightblue,blue);;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -32,6 +32,7 @@ body {
 
 .topnav {
   overflow: hidden;
+  font-size:18px;
 }
 
 .nav a {
@@ -102,8 +103,8 @@ p {
 }
 
 button {
-  margin: 0.1rem 0;
-  padding: 10px 15px;
+  margin: 0.1rem 0.2rem;
+  padding: 12px 15px;
   color: white;
   border: none;
   cursor: pointer;
@@ -115,7 +116,7 @@ button:hover {
 
 .button-blue {
   background: var(--button-blue-bg-color);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .button-transparent {
@@ -230,13 +231,13 @@ button:hover {
 }
 
 .button3 {
-  padding: 1rem;
+  padding: 1.2rem;
   background: rgba(255, 255, 255, 0.5);
   border: none;
 }
 
 .button4 {
-  padding: 1rem;
+  padding: 1.2rem;
   background: transparent;
   border: 1px solid white;
   transform: translate(-45px, -25px);
@@ -259,7 +260,7 @@ button:hover {
     margin: 0 auto;
     width: 95%;
     height: auto;
-    gap: 50px;
+    gap: 40px;
     margin-top: 1rem;
     padding-top: 1rem;
   }
